@@ -6,11 +6,15 @@
 
 .intro{
     width:100vw;
-    height:90vh;
-    background:url('./dna-sequence.jpg');   
+    height:30vh;
+    background:url('./eyes-genetic.jpg');   
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -400px;
+    position: relative;
+    color:black;
 }
+
 
 body{
     font-family:"Alata", sans-serif;
@@ -20,7 +24,9 @@ body{
     font-family:  'Josefin Sans', sans-serif;
     letter-spacing: -2px;
     font-size:1.75rem;
-    color:white;
+    background: rgba(201, 201, 201, 0.525);
+    padding:0.5rem 0.125rem 0.25rem 0.125rem;
+    border-radius:5px;
 }
 
 .genetic{
@@ -46,8 +52,9 @@ h2, h1{
  }
 
 nav{
+    width:80vw;
     height:30vh;
-    margin:auto 0vw 0 10vw;
+    margin:auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +78,10 @@ nav{
     font-size:0.9rem;
     color:white;
     list-style: none;
+}
+
+.mendellist{
+    margin: 1.5rem 0 0 2.5rem;
 }
 
 .nav-links a{
@@ -112,8 +123,6 @@ nav{
     height:110vh;
     width:100vw;
     position:relative;
-    background: #010326;
-    color:white;
 }
 
 .vr-man{
@@ -123,9 +132,9 @@ nav{
     width:45vw;
     height:70vh;
     overflow:hidden;
-    background: url('./img-intro.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('./elephants.jpeg');
+    background-position-y: -200px;
+    background-position-x: -100px;
 }
 
 
@@ -134,17 +143,13 @@ nav{
     background-position-x: -500px;
 }
 
-.vr-text{
-    width:45vw;
+.information{
+    width:60vw;
     height:60vh;
-    color: white;
-    position:absolute;
-    margin-left: auto;
-    margin-right:10vw;
-    top:40%;
+    color:hsl(0, 0%, 41%);
+    margin-left:10vw;
     right:-5%;
     padding:5rem;
-    background: #010326;
 }
 
 .vr-text h2{
@@ -153,6 +158,7 @@ nav{
 }
 
 .vr-text p{
+    color: var(--clr-dgray);
     font-size:0.9rem;
 }
 
@@ -170,129 +176,8 @@ nav{
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
-    padding:6rem 0;
+    margin-bottom: 6rem;
     letter-spacing: -5px;
-    background: #010326;
-    color:white;
-    border: none;
-}
-
-
-.grid{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    gap:2.5rem;
-    margin-top:3rem;
-    overflow: hidden;
-}
-
-[class*=grid-item]{
-    position:relative;
-    width:250px;
-    height:400px;
-    overflow: hidden;
-}
-
-[class*=grid-item] img{
-    height:100%;
-    position: absolute;
-    top:0%;
-
-}
-
-.grid-item1 img{
-    left:-50px;
-}
-
-.grid-item3 img{
-    height:110%;
-    top:-10%;
-    left:-8%;
-}
-
-.grid-item4 img{
-    height:110%;
-    top:-10%;
-    left:-90%;
-}
-
-.grid-item5 img{
-    left:-70%;
-}
-
-[class*=grid-item]::before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height: 100%;
-    z-index:2;
-    background:rgba(0,0,0,0.4);
-}
-
-[class*=grid-item]:hover::before{
-    background:rgba(255,255,255,0.7);
-    width:101%;
-    cursor: pointer;
-}
-
-[class*=grid-item]:hover .grid-text{
-    color: #000;
-}
-
-.grid-text{
-    position:absolute;
-    bottom:10%;
-    left:5%;
-    z-index:3;
-    color:white;
-    width:80%;
-}
-.grid-text:hover{
-    color:black;
-    cursor:pointer;
-}
-
-.grid-text h2{
-    font-size:1.5rem;
-    letter-spacing: 0px;
-}
-
-footer{
-    height: 20vh;
-    width:100vw;
-    background: black;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    bottom:0%;
-    color:white;
-    position:relative;
-}
-
-.footer-text img{
-    width:60%;
-}
-
-.footer-text{
-    margin-left:10vw;
-    width:30%;
-    height:100%;
-    padding:1rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.foot-list{
-    display:flex;
-    width:100%;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.foot-list li{
-    position:relative;
 }
 
 .attribution{
@@ -358,6 +243,12 @@ justify-content: space-between;
         background:white;
     }
 
+    .intro{
+        height:100vh;
+        background-position-x: -110%;
+        background-size: cover;
+        position:relative;
+    }
 
 
     .icon{
@@ -448,6 +339,7 @@ justify-content: space-between;
     
     /* Section change*/
     .virtual-reality{
+        height:140vh;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -458,8 +350,6 @@ justify-content: space-between;
         position: unset;
         transform: scale(0.6);
         margin: 2rem;
-        background-repeat: no-repeat;
-        width:100%;
     }
   
     .vr-text{
@@ -474,78 +364,6 @@ justify-content: space-between;
         padding: 0px;;
         margin-bottom:1rem;
         font-size:2.4rem;
-    }
-
-    .creations-text
-    
-    
-    .grid{
-        width:80vw;
-        margin: auto;
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, minmax(20vh, 30vh));
-        gap:1.5rem;
-        margin-top:2rem;
-    }
-
-    .grid img{
-        display:none;
-    }
-    .grid-item1{background-image: url('./mobile-deep-earth.jpg');}
-    .grid-item2{background-image: url('./mobile-night-arcade.jpg');}
-    .grid-item3{background-image: url('./mobile-soccer-team.jpg');}
-    .grid-item4{background-image: url('./mobile-grid.jpg');}
-    .grid-item5{background-image: url('./mobile-from-above.jpg');}
-    .grid-item6{background-image: url('./mobile-pocket-borealis.jpg');}
-    .grid-item7{background-image: url('./mobile-curiosity.jpg');}
-    .grid-item8{background-image: url('./mobile-fisheye.jpg')}
-
-    footer{
-        position: absolute;
-        top:550%;
-        height: 70vh;
-        width:100vw;
-        background: black;
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: flex-start;
-        bottom:0%;
-        color:white;
-    }
-    
-    .footer-text img{
-        width:60%;
-        align-self: center;
-    }
-    
-    .footer-text{
-        margin:1rem auto;
-        width:70%;
-        height:60%;
-        padding:1rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .foot-list{
-        width:100%;
-        height:80%;
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: space-between;
-        list-style: none;
-    }
-    
-    .attribution{
-        position:absolute;
-        bottom:0%;
-        right:0%;
-        color:white;
-        font-size:0.7rem;
     }
     
     .social{
