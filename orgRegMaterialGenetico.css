@@ -17,6 +17,11 @@ body{
     font-family:"Alata", sans-serif;
 }
 
+img{
+    margin:1rem 0;
+    width:500px;
+}
+
 .logoLetters{
     font-family:  'Josefin Sans', sans-serif;
     letter-spacing: -2px;
@@ -392,5 +397,23 @@ justify-content: space-between;
         width:100%;
         text-align: center;
         margin-top:1.2rem;
+    }
+}
+
+@media screen and (max-width:750px){
+    .information{
+        width:90vw;
+        margin:1rem 5vw 0 5vw;
+        height:max-content;
+        padding: unset;
+    }
+
+    img{
+        width:90vw;
+    }
+
+    
+    .intro{
+        height:unset;
     }
 }

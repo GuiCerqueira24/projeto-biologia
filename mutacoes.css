@@ -31,6 +31,11 @@ body{
     color:hsl(332, 42%, 44%);
 }
 
+img{
+    margin:1rem 0;
+    width:500px;
+}
+
 h2, h1{
     text-transform:uppercase;
     font-family: 'Josefin Sans', sans-serif;
@@ -394,3 +399,21 @@ justify-content: space-between;
         margin-top:1.2rem;
     }
 }
+
+@media screen and (max-width:750px){
+    .information{
+        width:90vw;
+        margin:1rem 5vw 0 5vw;
+        height:max-content;
+        padding: unset;
+    }
+
+    img{
+        width:90vw;
+    }
+
+    .intro{
+        height:unset;
+    }
+}
+

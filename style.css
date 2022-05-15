@@ -112,7 +112,7 @@ nav{
     height:110vh;
     width:100vw;
     position:relative;
-    background: #010326;
+    background: rgb(0, 7, 0);
     color:white;
 }
 
@@ -144,7 +144,7 @@ nav{
     top:40%;
     right:-5%;
     padding:5rem;
-    background: #010326;
+    background: rgb(0, 7, 0);
 }
 
 .vr-text h2{
@@ -172,14 +172,14 @@ nav{
     justify-content: space-between;
     padding:6rem 0;
     letter-spacing: -5px;
-    background: #010326;
+    background: rgb(0, 7, 0);
     color:white;
     border: none;
 }
 
 
 .grid{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap:2.5rem;
@@ -219,21 +219,6 @@ nav{
 
 .grid-item5 img{
     left:-70%;
-}
-
-[class*=grid-item]::before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height: 100%;
-    z-index:2;
-    background:rgba(0,0,0,0.4);
-}
-
-[class*=grid-item]:hover::before{
-    background:rgba(255,255,255,0.7);
-    width:101%;
-    cursor: pointer;
 }
 
 [class*=grid-item]:hover .grid-text{
@@ -358,6 +343,10 @@ justify-content: space-between;
         background:white;
     }
 
+    .grid{
+        display: unset;
+    }
+
 
 
     .icon{
@@ -437,12 +426,12 @@ justify-content: space-between;
     
     .intro-text{
         font-family: 'Josefin Sans', sans-serif;
-        font-size:2.5rem;
+        font-size:1.5rem;
         width:90vw;
         margin:auto;
-        margin-top:10%;
         text-align: center;
         z-index:6;
+        padding: 0;
         
     }
     
@@ -475,70 +464,31 @@ justify-content: space-between;
         margin-bottom:1rem;
         font-size:2.4rem;
     }
-
-    .creations-text
     
     
     .grid{
         width:80vw;
         margin: auto;
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, minmax(20vh, 30vh));
+        align-items: center;
         gap:1.5rem;
         margin-top:2rem;
     }
 
-    .grid img{
-        display:none;
-    }
-    .grid-item1{background-image: url('./mobile-deep-earth.jpg');}
-    .grid-item2{background-image: url('./mobile-night-arcade.jpg');}
-    .grid-item3{background-image: url('./mobile-soccer-team.jpg');}
-    .grid-item4{background-image: url('./mobile-grid.jpg');}
-    .grid-item5{background-image: url('./mobile-from-above.jpg');}
-    .grid-item6{background-image: url('./mobile-pocket-borealis.jpg');}
-    .grid-item7{background-image: url('./mobile-curiosity.jpg');}
-    .grid-item8{background-image: url('./mobile-fisheye.jpg')}
-
-    footer{
-        position: absolute;
-        top:550%;
-        height: 70vh;
-        width:100vw;
-        background: black;
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: flex-start;
-        bottom:0%;
-        color:white;
-    }
-    
-    .footer-text img{
-        width:60%;
-        align-self: center;
-    }
-    
-    .footer-text{
-        margin:1rem auto;
-        width:70%;
-        height:60%;
-        padding:1rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .foot-list{
+    [class*='grid-item']{
         width:100%;
-        height:80%;
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: space-between;
-        list-style: none;
+        margin: 1rem 0;
     }
+
+    .logoLetters{
+        letter-spacing: 0px;
+    }
+
+    .alineas{
+        letter-spacing: 0px;
+    }
+
+    
+    
     
     .attribution{
         position:absolute;
